@@ -59,6 +59,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sdk.sensors.gestures=false
 
+# A2DP offload support
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.bluetooth.a2dp_offload.supported=true
+
+# Disable A2DP offload
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.bluetooth.a2dp_offload.disabled=false
+
+# A2DP offload DSP supported encoder list
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+
+#enable headset calibration
+PRODUCT_PROPERTY_OVERRIDES += \
+audio.volume.headset.gain.depcal=true
+
+#enable dualmic fluence for voice communication
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.audio.fluence.voicecomm=true
+
 #Set AudioFlinger client heap size
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.af.client_heap_size_kbyte=7168
