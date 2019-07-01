@@ -119,14 +119,11 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.spkr_prot.tx.sampling_rate=48000
 
-#Set AudioFlinger client heap size
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.af.client_heap_size_kbyte=7168
-
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
 
+#Set AudioFlinger client heap size
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
