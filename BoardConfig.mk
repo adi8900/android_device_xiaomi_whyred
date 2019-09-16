@@ -68,7 +68,6 @@ TARGET_KERNEL_CONFIG := whyred-perf_defconfig
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_USE_SDCLANG := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
