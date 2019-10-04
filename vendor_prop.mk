@@ -59,25 +59,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sdk.sensors.gestures=false
 
-# A2DP offload support
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.bluetooth.a2dp_offload.supported=true
-
-# Disable A2DP offload
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.bluetooth.a2dp_offload.disabled=false
-
-# A2DP offload DSP supported encoder list
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-
 #enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.volume.headset.gain.depcal=true
 
 #add dynamic feature flags here
 PRODUCT_PROPERTY_OVERRIDES += \
-vendor.audio.feature.a2dp_offload.enable=true \
 vendor.audio.feature.afe_proxy.enable=true \
 vendor.audio.feature.anc_headset.enable=true \
 vendor.audio.feature.battery_listener.enable=false \
